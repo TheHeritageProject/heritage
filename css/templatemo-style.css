@@ -24,7 +24,7 @@ body, .templatemo-left-nav { background: #1f2124; }
 h1, h2, h3 { margin: 0; }
 h2 { font-size: 1.6em; }
 h3 {
-	color: #7f7f7f;
+	color: #83848d;
 	font-size: 1.4em;
 }
 ul {
@@ -200,7 +200,7 @@ footer { padding: 15px; }
     list-style: none;
 }
 .templatemo-top-nav a {
-	color: #7f7f7f;
+	color: #83848d;
     display: block;
     padding: 0 50px;
     border-left: 2px solid #c5c5c5;
@@ -286,7 +286,7 @@ footer { padding: 15px; }
 }
 .pagination>li>a {
 	border-color: #E9E8E8;
-	color: #a6a6a6;
+	color: #83848d;
 	margin: 2px;
 	padding: 10px;	
 }
