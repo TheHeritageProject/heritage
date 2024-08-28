@@ -8,18 +8,6 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Подключаем собственные стили -->
     <style>
-        ::-webkit-scrollbar {
-    width: 12px; /* Ширина скроллбара */
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #6d6d6d; /* Цвет ползунка скроллбара */
-    border-radius: 10px; /* Скругление углов ползунка */
-}
-
-::-webkit-scrollbar-track {
-    background-color: #000000; /* Цвет трека скроллбара */
-}
         @font-face {
             font-family: 'PorscheRegular';
             src: url('NFS_by_JLTV.ttf') format('truetype');
@@ -29,7 +17,7 @@
             src: url('MADE TOMMY Regular Outline_PERSONAL USE.otf') format('truetype');
         }
         body {
-            cursor: url('https://cdn.discordapp.com/attachments/497433271567908874/1278295748730949672/image_preview_rev_1.png?ex=66d04930&is=66cef7b0&hm=2c04f93215c3d890ddb6dd5ab6f92b2e70a3505d2e295b29c4c02504c6493a96&'), default;
+            
             background-color: black;
             color: white;
             height: 90vh;
@@ -37,14 +25,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
         }
         .container {
             position: relative;
             color: rgb(175, 175, 175);
             width: 100%;
             max-width: 1000px; /* Максимальная ширина блока */
-            height: 630px;
+            height: 550px;
             background-image: url('https://cdn.discordapp.com/attachments/497433271567908874/1278257653784772628/istockphoto-532051977-612x612.jpg?ex=66d025b5&is=66ced435&hm=518ac75aaf11038b15074c2288dadd825f019919e336518cabd2843029dc1deb&');
             padding: 20px;
             box-sizing: border-box;
@@ -88,7 +75,7 @@
             left: -20px;
             width: 50px;
             height: 50px;
-            opacity: 0.8;
+            opacity: 0.9;
             background-image: url('https://cdn.discordapp.com/attachments/497433271567908874/1278254879986417750/shildui.png?ex=66d02320&is=66ced1a0&hm=71be931564d81d3166e683734210d57d1573b52e5ef7fda7d534dda92a41abd5&');
         }
         .bottom-left-btn2 {
@@ -96,7 +83,7 @@
             left: -20px;
             width: 50px;
             height: 50px;
-            opacity: 0.8;
+            opacity: 0.9;
             background-image: url('https://cdn.discordapp.com/attachments/497433271567908874/1278254879986417750/shildui.png?ex=66d02320&is=66ced1a0&hm=71be931564d81d3166e683734210d57d1573b52e5ef7fda7d534dda92a41abd5&');
         }
         .bottom-left-btn {
@@ -104,7 +91,7 @@
             left: -20px;
             width: 50px;
             height: 50px;
-            opacity: 0.8;
+            opacity: 0.9;
             background-image: url('https://cdn.discordapp.com/attachments/497433271567908874/1278254879986417750/shildui.png?ex=66d02320&is=66ced1a0&hm=71be931564d81d3166e683734210d57d1573b52e5ef7fda7d534dda92a41abd5&');
         }
         .bottom-right {
@@ -146,7 +133,7 @@
         }
 
         .scrollable-content {
-            height: 550px;
+            height: 500px;
             overflow-y: scroll;
             width: 100%;
         }
@@ -179,92 +166,6 @@
             width: 10px;
             height: 10px;
         }
-
-.corner {
-    transition: opacity 0.3s ease; /* Добавляем плавный переход для изменения opacity */
-}
-
-.bottom-left-btn:hover,
-.bottom-left-btn2:hover,
-.bottom-left-btn3:hover {
-    opacity: 1;
-}
-
-.bottom-left-btn img,
-.bottom-left-btn2 img,
-.bottom-left-btn3 img {
-    transition: opacity 0.3s ease; /* Добавляем плавный переход для изменения opacity */
-}
-
-.bottom-left-btn:hover img,
-.bottom-left-btn2:hover img,
-.bottom-left-btn3:hover img {
-    opacity: 1;
-}
-.carousel {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    overflow: hidden;
-}
-
-.carousel-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: calc(180px * 6); /* 6 images each 180px wide */
-    height: 100%;
-}
-
-.carousel-images img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 1;
-}
-
-.prev {
-    left: 0;
-    z-index: 6;
-}
-
-.next {
-    right: 0;
-    z-index: 6;
-}
-
-.image-container {
-    width: 180px;
-    height: 180px;
-    overflow: hidden;
-    position: relative;
-}
-
-.image-container img {
-    width: 140px; /* Увеличение изображения в 2 раза */
-    height: 140px; /* Увеличение изображения в 2 раза */
-    position: absolute;
-    top: 30px; /* Центрирование изображения по вертикали */
-    left: 20px; /* Центрирование изображения по горизонтали */
-}
     </style>
 </head>
 <body>
@@ -282,7 +183,7 @@ button {
                         </div>
                 
                         <div class="outer-circle">
-                            <div class="inner-circle" style="background-color: rgb(233, 32, 32);"></div>
+                            <div class="inner-circle" style="background-color: rgb(94, 255, 0);"></div>
                         </div>
                     </div>
                 </div>
@@ -306,60 +207,12 @@ button {
         <div class="corner bottom-right"></div>
         <br>
         <div class="scrollable-content" style="margin: 20px">
-           <div style="display: flex;">
-            <div>
-                <div class="carousel">
-                    <img style="width: 180px; height: 190px; position: absolute; z-index: 5; opacity: 0.7;" src="https://cdn.discordapp.com/attachments/497433271567908874/1278283634801115199/opbsa53nrps3uvek9rg1t7a2bj-9a1f246bac5b636e6c5dd767939c8a91.png?ex=66d03de7&is=66ceec67&hm=77cd2810534d3b1d9192929504e3eb546675de3e3bc92c65e46ce41f58af3ff8&">
-
-                 <button class="prev">❮</button>
-                 <div class="carousel-container">
-                     <div class="carousel-images">
-                         <div class="image-container">
-                             <img src="images/11zon_cropped.png" alt="Image 1">
-                         </div>
-                         <div class="image-container">
-                             <img src="images/11zon_cropped (2).png" alt="Image 2">
-                         </div>
-                         <div class="image-container">
-                             <img src="images/11zon_cropped (3).png" alt="Image 3">
-                         </div>
-                         <div class="image-container">
-                             <img src="images/11zon_cropped (1).png" alt="Image 4">
-                         </div>
-                         <div class="image-container">
-                             <img src="images/11zon_cropped (4).png" alt="Image 5">
-                         </div>
-                         <div class="image-container">
-                             <img src="images/11zon_cropped (5).png" alt="Image 6">
-                         </div>
-                     </div>
-                 </div>
-                 <button class="next">❯</button>
-             </div>
-            </div>
-            
-            <div style="margin-left: 20px; font-weight: 600;" id="#font2"><br>The game currently in development is an exciting action RPG project that allows players to dive into the world of the legendary Toa heroes. The core concept of the game is to give every fan of the BIONICLE universe the opportunity not only to play as all the iconic heroes but also to delve deeper into their stories and connections with the Matoran, expanding the original storyline. Players will immerse themselves in epic adventures, facing new threats and uncovering the mysteries of <a href="" style="color: rgb(226, 128, 43);">Voya Nui Island</a>.</div>
-           </div>
-           
-           <!--<div><img src="https://cdn.discordapp.com/attachments/497433271567908874/1278265872796090438/photo_5359531063107510379_w.jpg?ex=66d02d5d&is=66cedbdd&hm=e2e5c888380dd91c5d5cdaafb83f41a030ff2ab0ca1fbd004289a79d42c3a479&" width="300" height="180" style="border: 2px solid rgb(57, 57, 57);"></div>-->
-
-            <div style="display: flex;">
-                <div>
-                    <p style="font-weight: 600;"> <br> The project offers a rich set of gameplay mechanics, including engaging quests, dynamic combat, and grinding elements, allowing players not only to enjoy captivating gameplay but also to hone their skills. Attention to detail and the intricately designed combat system make each battle unique, requiring thoughtful tactics and skilled character management.</p>
-
-                    <p style="font-weight: 600;">The open world of Voya Nui Island, filled with various locations and secrets, as well as thrilling dungeons, creates an atmosphere of continuous exploration and adventure. Players will be able to freely explore the island, discover hidden areas, and face dangerous enemies. The game seamlessly blends elements of classic action and role-playing, making it appealing to both genre veterans and newcomers.</p>
-                </div>
-                <div style="padding-left: 20px;">
-                    <div><img src="https://cdn.discordapp.com/attachments/497433271567908874/1278299371795910731/photo_5334558529815700298_x.jpg?ex=66d04c8f&is=66cefb0f&hm=7791d2db8ce34f0dd38c069d44e46c0d4bbecc745899e50a8c034a25d595695f&" width="150" height="220" style="border: 2px solid rgb(57, 57, 57); margin-right: 20px; margin-top: 20px; "></div>
-                </div>
-            </div>
-            <p style="font-weight: 600;">All stages of development, as well as the latest news and updates, are thoroughly documented in my blog on <a href="" style="color: rgb(226, 128, 43);">Twitter</a>. I strive to maintain a close connection with the community, regularly sharing information about the progress of development, new features, gameplay changes, and other important aspects of the project.</p>
-            <p style="font-weight: 600;">In the blog, you'll find reports on the work I've done, including descriptions of the stages of creating game mechanics, character development, and environment design. I also share screenshots, videos, and concept art to showcase my progress and give you a behind-the-scenes look at the development process.</p>
-
+            <p style="font-weight: 600;">Welcome! BIONICLE Voya Nui Chronicles is an indie game inspired by the 2006 BIONICLE storyline.</p>
+            <p style="font-weight: 600;">Этот текст отображается с использованием шрифта Porsche Regular.</p>
+            <p style="font-weight: 600;">Дополнительный текст для проверки прокрутки. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular. Этот текст отображается с использованием шрифта Porsche Regular.</p>
         </div>
     </div>
     <script>
-        //document.body.style.cursor = 'url("images/image_preview_rev_1.png"), auto';
         const innerCircles = document.querySelectorAll('.inner-circle');
         let counter = 0;
 
@@ -368,45 +221,14 @@ button {
                 if (index === counter % innerCircles.length) {
                     circle.style.backgroundColor = 'white';
                 } else {
-                    circle.style.backgroundColor = index === 0 ? 'rgb(94, 255, 0)' : 'rgb(233, 32, 32)';
+                    circle.style.backgroundColor = index === 0 ? 'rgb(94, 255, 0)' : 'rgb(252, 255, 84)';
                 }
             });
             counter++;
         }
 
         setInterval(changeColor, 1000);
-
     </script>
-<script>
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    const imagesContainer = document.querySelector('.carousel-images');
-    const imageWidth = 180;
-    const totalImages = 6;
-    let currentIndex = 0;
-
-    function updateCarousel() {
-        const offset = -currentIndex * imageWidth;
-        imagesContainer.style.transform = `translateX(${offset}px)`;
-    }
-
-    prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-        updateCarousel();
-    });
-
-    nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % totalImages;
-        updateCarousel();
-    });
-
-    // Добавляем автоматическую прокрутку каждые 3 секунды
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % totalImages;
-        updateCarousel();
-    }, 3000);
-</script>
-
     <!-- Подключаем Bootstrap JS и jQuery (необходим для некоторых компонентов Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
